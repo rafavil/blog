@@ -10,7 +10,7 @@
 </head>
 <body>
   <header id="main_navigation" class="clearfix">
-		<a href="index.html" class="name">Ralph Villa</a>
+    <%= link_to "Ralph Villa", root_path, class: "name" %>
 		<nav>
 		  <%= link_to "Articles", posts_path %>
 			<a href="projects.html">Projects</a>
@@ -20,5 +20,13 @@
 
 <%= yield %>
 
+  <footer id="main_footer">
+		<p class="copyright">&copy; 2016 Ralph Villa</p>
+		<nav>
+			<a href="http://twitter.com/rrvr44" target="_blank"><i class="fa fa-twitter"></i></a>
+			<a href="#"><i class="fa fa-dribbble" target="_blank"></i></a>
+			<a href="https://github.com/rafavil" target="_blank"><i class="fa fa-github"></i></a>
+		</nav>
+	</footer>
 </body>
 </html>
