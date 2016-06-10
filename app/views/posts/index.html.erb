@@ -8,28 +8,5 @@
 				<hr>
 			</div>
 		<% end %>
-		<div class="post">
-			<p class="date">Friday, June 3rd</p>
-			<h2><a href="#">The DO List</a></h2>
-			<hr>
-		</div>
 
-		<div class="post">
-			<p class="date">Friday, June 3rd</p>
-			<h2><a href="#">How do i learn "X"?</a></h2>
-			<hr>
-		</div>
-
-		<div class="post">
-			<p class="date">Friday, June 3rd</p>
-			<h2><a href="#">Strive for the uncomfortable</a></h2>
-			<hr>
-		</div>
-	</div>
-
-	<div class="pagination">
-		<span class="previous_page disabled">Previous</span>
-		<em class="current">1</em>
-		<a rel="next"	href="#">2</a>
-		<a href="#" class="next_page">Next</a>
-	</div>
+	<%= will_paginate @posts %>
